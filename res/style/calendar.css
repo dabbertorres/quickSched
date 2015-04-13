@@ -1,0 +1,83 @@
+/*
+    css for the calendar
+*/
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body
+{
+    padding: 0.5%;
+    width: 98%;
+    height: 98%;
+
+    background: #8ac7f9;
+}
+
+#calendar
+{
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    width: 50%;
+    height: 60%;
+    table-layout: fixed;
+}
+
+#calendar tr
+{
+    width: 100%;
+    max-height: 16%;
+}
+
+#calendar th
+{
+    border: 2px solid black;
+    padding: 5px 0px;
+    width: 14%;
+    max-height: 16%;
+}
+
+#calendar td
+{
+    border: 2px solid black;
+    width: 14%;
+    max-height: 16%;
+}
+
+#calendar td a, a:visited
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+
+#calendar td a:hover
+{
+    background: rgba(240, 240, 240, 0.5);
+}
+
+#apptSubmitDiv
+{
+    display: none;
+
+    padding: 20px;
+
+    background: white;
+    border: 5px solid black;
+
+    position: absolute;
+
+    top: 46%;
+    left: 45%;
+
+    height: 25%;
+    width: 12%;
+}

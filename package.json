@@ -1,0 +1,16 @@
+{
+  "name": "SchedulingApp",
+  "version": "0.0.1",
+  "description": "a webapp for creating appointment schedules",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Alec Iverson (dabbertorres)",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.12.2",
+    "express": "^4.12.3"
+  }
+}
