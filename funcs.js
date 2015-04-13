@@ -4,20 +4,16 @@
 
 exports.resPath = function(file)
 {
-    if(typeof file !== "undefined")
-        return __dirname + "/res/" + file;
-    else
-        return __dirname + "/res/";
+    file = (typeof file !== "undefined") ? file : "";
+    return __dirname + "/res/" + file;
 };
 
 exports.logReq = function(req, str)
 {
+	str = (typeof str !== "undefined") ? str : "Request";
     var now = new Date();
 
-    if(typeof str === "undefined")
-        console.log("Request from: " + req.ip + " for \"" + req.path + "\" at: " + now);
-    else
-        console.log(str + " from: " + req.ip + " for \"" + req.path + "\" at: " + now);
+    console.log(str + " from: " + req.ip + " for \"" + req.path + "\" at: " + now);
 };
 
 exports.logPost = function(req)
