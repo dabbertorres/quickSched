@@ -28,8 +28,6 @@ router.get("/scripts/submitAppt.js", function(req, res)
 router.post("/", function(req, res)
 {
     funcs.logPost(req);
-    console.log("Appt length: " + req.body.apptLength);
-    console.log("Message: " + req.body.message);
     res.send("Appointment made for " + "date" + " with length of: " + req.body.apptLength + " with a message of: " + req.body.message);
 });
 
